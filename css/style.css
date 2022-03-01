@@ -166,3 +166,141 @@ border: 1px solid #d3d2d2;
 .t-12{
     font-size: 12px;
 }
+
+/* Naveen Navbar */
+
+    .msb, #actions {
+    -moz-animation: slidein 300ms forwards;
+    -o-animation: slidein 300ms forwards;
+    -webkit-animation: slidein 300ms forwards;
+    animation: slidein 300ms forwards;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  #Dashboard {
+    -moz-animation: bodyslidein 300ms forwards;
+    -o-animation: bodyslidein 300ms forwards;
+    -webkit-animation: bodyslidein 300ms forwards;
+    animation: bodyslidein 300ms forwards;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  body.msb-x  #Dasboard, body.msb-x  #actions {
+    margin-left: 0;
+    -moz-animation: bodyslideout 300ms forwards;
+    -o-animation: bodyslideout 300ms forwards;
+    -webkit-animation: bodyslideout 300ms forwards;
+    animation: bodyslideout 300ms forwards;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  body.msb-x  #Dashboard, body.msb-x  #actions {
+      /* margin-left: 0; */
+    -moz-animation: slideout 300ms forwards;
+    -o-animation: slideout 300ms forwards;
+    -webkit-animation: slideout 300ms forwards;
+    animation: slideout 300ms forwards;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  body.msb-x > .msb{
+      margin-left: -200px;
+  }
+/* Slide in animation */
+@-moz-keyframes slidein {
+    0% {
+      left: -200px;
+   }
+    100% {
+      left: 0;
+   }
+  }
+  @-webkit-keyframes slidein {
+    0% {
+      left: -200px;
+   }
+    100% {
+      left: 0;
+   }
+  }
+  @keyframes slidein {
+    0% {
+      left: -200px;
+   }
+    100% {
+      left: 0;
+   }
+  }
+  @-moz-keyframes slideout {
+    0% {
+      left: 0;
+   }
+    100% {
+      left: -200px;
+   }
+  }
+  @-webkit-keyframes slideout {
+    0% {
+      left: 0;
+   }
+    100% {
+      left: -200px;
+   }
+  }
+  @keyframes slideout {
+    0% {
+      left: 0;
+   }
+    100% {
+      left: -200px;
+   }
+  }
+  @-moz-keyframes bodyslidein {
+    0% {
+      left: 0;
+   }
+    100% {
+      margin-left: 200px;
+   }
+  }
+  @-webkit-keyframes bodyslidein {
+    0% {
+      left: 0;
+   }
+    100% {
+      left: 0;
+   }
+  }
+  @keyframes bodyslidein {
+    0% {
+      margin-left: 0;
+   }
+    100% {
+      margin-left: 200px;
+   }
+  }
+  @-moz-keyframes bodyslideout {
+    0% {
+      margin-left: 200px;
+   }
+    100% {
+      margin-right: 0;
+   }
+  }
+  @-webkit-keyframes bodyslideout {
+    0% {
+      margin-left: 200px;
+   }
+    100% {
+      margin-left: 0;
+   }
+  }
+  @keyframes bodyslideout {
+    0% {
+      margin-left: 200px;
+   }
+    100% {
+      margin-left: 0;
+   }
+  }
