@@ -40,8 +40,6 @@ var exerciseObjects = [
 function Update() {
 
     let exerciseList = document.querySelector('.exercise-list')
-
-
     let exerciseItems = ''
 
     for (exercise of exerciseObjects) {
@@ -61,57 +59,51 @@ function Update() {
 };
 Update();
 
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+    'use strict'
 
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
 
-let name1 = null;
-let date = null;
-let start_time = null;
-let end_time = null;
-let duration = null;
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                } else {
+                console.log('passed');
+                form.classList.add('was-validated')
 
-function submitForm() {
-    nameInput = document.getElementById('name');
-    dateInput = document.getElementById('date');
-    startTimeInput = document.getElementById('start_time');
-    endTimeInput = document.getElementById('end_time');
-    // durationInput = document.getElementById('duration');
+                // let nameInput = document.getElementById('validationCustom01');
+                // let dateInput = document.getElementById('validationCustom02');
+                // let startTimeInput = document.getElementById('validationCustom03');
+                // let endTimeInput = document.getElementById('validationCustom04');
 
-console.log(nameInput);
-console.log(dateInput);
-console.log(startTimeInput);
-console.log(endTimeInput);
-// console.log(durationInput);
+                // const name1 = nameInput.value;
+                // const date = dateInput.value;
+                // const start_time = startTimeInput.value;
+                // const end_time = endTimeInput.value;
 
-    const name1 = nameInput.value;
-    const date = dateInput.value;
-    const start_time = startTimeInput.value;
-    const end_time = endTimeInput.value;
-    // const duration = durationInput.value;
+                // idInc = exerciseObjects[exerciseObjects.length - 1].id;
 
-    // alert(`${firstName} ${lastName}`);
-    console.log(`${name1} ${date} ${start_time} ${end_time} `)
-    // ${duration}
+                // exerciseObjects.push({
+                //     id: idInc + 1,
+                //     name: name1,
+                //     date: date,
+                //     start_time: start_time,
+                //     end_time: end_time,
+                //     duartion: '6:30'
 
-    exerciseObjects.push({
-        id: exerciseObjects[exerciseObjects.length-1].id,
-        name: name1,
-        date: date,
-        start_time: start_time,
-        end_time: end_time,
-        duartion: '6:30'
+                // });
+            }
+            
 
-    });
-
-    console.log(exerciseObjects);
-    Update();
-    resetForm();
-}
-
-function resetForm() {
-    nameInput.value = '';
-    dateInput.value = '';
-    startTimeInput.value = '';
-    endTimeInput.value = '';
-    // durationInput.value = '';
-}
-// resetForm();
+            //     console.log(exerciseObjects);
+            }, false)
+            
+        })
+        // Update();
+})()

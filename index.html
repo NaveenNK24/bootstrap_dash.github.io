@@ -15,7 +15,9 @@
 
   <link rel="stylesheet" href="css/style.css">
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
 
   <title>Bootstrap </title>
 </head>
@@ -54,7 +56,7 @@
   <!-- ACTIONS -->
   <section id="actions" class="py-4 mb-4 bg-light">
     <div class="container ">
-      <div class="row justify-content-between">
+      <div class="d-flex justify-content-between">
         <div class="col-md-10">
           <div class="dropdown">
             <div class="btn-group">
@@ -122,7 +124,7 @@
             <div class="container">
               <div class="card bg-color text-white mb-3">
                 <div class="card-body ">
-                  <div class="row d-flex align-items-center ">
+                  <div class="d-flex align-items-center ">
                     <div class="col-md-3 card-img-st">
                       <img src="img/graph.png" alt="">
                     </div>
@@ -139,7 +141,7 @@
               </div>
               <div class="card mb-4 bg-light">
                 <div class="card-body">
-                  <div class="row d-flex align-items-center ">
+                  <div class="d-flex align-items-center ">
                     <div class="col-md-3 card-img-st1">
                       <img src="img/timer_blue.png" alt="">
                     </div>
@@ -154,7 +156,8 @@
                   </div>
                 </div>
               </div>
-              <button type="button" class="btn text-uppercase btn-outline-secondary" style="width: 100%; border: 1px solid #382f9c; font-size: 14px; font-weight: 500; color: #382f9c;">
+              <button type="button" class="btn text-uppercase btn-outline-secondary"
+                style="width: 100%; border: 1px solid #382f9c; font-size: 14px; font-weight: 500; color: #382f9c;">
                 <img src="img/pdf.png" class="img-rounded" alt="Cinque Terre" style="margin: 0px 10px;">
                 Export as PDF
               </button>
@@ -164,7 +167,7 @@
         <!-- Todo list -->
         <div class="col-md-8">
           <h3>Todo List</h3>
-          <div class="row align-items-center mb-3">
+          <div class="d-flex align-items-center mb-3">
             <div class="col-md-1">
               <div class="row">
                 <p class="text-center mb-0">06<br><span>MAY</span></p>
@@ -183,12 +186,12 @@
                     </div>
                   </div>
 
-                 
+
                 </div>
               </div>
             </div>
           </div>
-          <div class="row align-items-center mb-3">
+          <div class="d-flex align-items-center mb-3">
             <div class="col-md-1">
               <div class="row">
                 <p class="text-center mb-0">06<br><span>MAY</span></p>
@@ -210,7 +213,7 @@
               </div>
             </div>
           </div>
-          <div class="row align-items-center">
+          <div class="d-flex align-items-center">
             <div class="col-md-1">
               <div class="row">
                 <p class="text-center mb-0">06<br><span>MAY</span></p>
@@ -269,118 +272,6 @@
 
   <!-- MODALS -->
 
-  <!-- ADD POST MODAL -->
-  <div class="modal fade" id="addPostModal">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header bg-primary text-white">
-          <h5 class="modal-title">Add Post</h5>
-          <button class="close" data-dismiss="modal">
-            <span>&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="title">Title</label>
-              <input type="text" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="category">Category</label>
-              <select class="form-control">
-                <option value="">Web Development</option>
-                <option value="">Tech Gadgets</option>
-                <option value="">Business</option>
-                <option value="">Health & Wellness</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="image">Upload Image</label>
-              <div class="custom-file">
-                <input type="file" class="custom-file-input" id="image">
-                <label for="image" class="custom-file-label">Choose File</label>
-              </div>
-              <small class="form-text text-muted">Max Size 3mb</small>
-            </div>
-            <div class="form-group">
-              <label for="body">Body</label>
-              <textarea name="editor1" class="form-control"></textarea>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-primary" data-dismiss="modal">Save Changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ADD CATEGORY MODAL -->
-  <div class="modal fade" id="addCategoryModal">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header bg-success text-white">
-          <h5 class="modal-title">Add Category</h5>
-          <button class="close" data-dismiss="modal">
-            <span>&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="title">Title</label>
-              <input type="text" class="form-control">
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-success" data-dismiss="modal">Save Changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ADD USER MODAL -->
-  <div class="modal fade" id="addUserModal">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header bg-warning text-white">
-          <h5 class="modal-title">Add User</h5>
-          <button class="close" data-dismiss="modal">
-            <span>&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="password">Password</label>
-              <input type="password" class="form-control">
-            </div>
-            <div class="form-group">
-              <label for="password2">Confirm Password</label>
-              <input type="password" class="form-control">
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-warning" data-dismiss="modal">Save Changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Button trigger modal -->
-
-
-  <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -388,34 +279,49 @@
           <h5 class="modal-title" id="exampleModalLabel">Add Project</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          <form>
+        <form class="needs-validation" novalidate>
+          <div class="modal-body">
+
             <div class="form-group">
-              <label for="name">Title</label>
-              <input id="name" type="text" class="form-control">
+              <label for="validationCustom01" class="form-label">Project Name</label>
+              <input type="text" class="form-control" id="validationCustom01" required>
+              <div class="invalid-feedback">
+                Enter a project name
+              </div>
             </div>
             <div class="form-group">
-              <label for="date">Date</label>
-              <input id="date" type="date" class="form-control">
+              <label for="validationCustom02" class="form-label">Date</label>
+              <input type="date" class="form-control" id="validationCustom02" required>
+              <div class="invalid-feedback">
+                Please select a date
+              </div>
             </div>
+
             <div class="form-group">
-              <label for="start_time">Start time</label>
-              <input id="start_time" type="time" class="form-control">
+              <label for="validationCustom03" class="form-label">Start time</label>
+              <input type="time" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Please enter a start time
+              </div>
             </div>
+
             <div class="form-group">
-              <label for="end_time">End time</label>
-              <input id="end_time" type="time" class="form-control">
+              <label for="validationCustom04" class="form-label">Start time</label>
+              <input type="time" class="form-control" id="validationCustom04" required>
+              <div class="invalid-feedback">
+                Please enter a start time
+              </div>
             </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button onclick="submitForm()" type="button" class="btn btn-primary">Save changes</button>
-        </div>
+
+          </div>
+          <div class="form-group modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Save changes</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
-
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -425,13 +331,6 @@
     crossorigin="anonymous"></script>
 
   <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
-
-  <script>
-    // Get the current year for the copyright
-    $('#year').text(new Date().getFullYear());
-
-    CKEDITOR.replace('editor1');
-  </script>
   <script src="app.js"></script>
 </body>
 
