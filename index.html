@@ -45,9 +45,10 @@
           <li><a href="#"> <img src="img/download.png" alt="" srcset=""> Download App</a></li>
         </ul>
         <ul>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
-          <li><img src="" alt=""></li>
+          <li><img src="img/notification.png" alt=""></li>
+          <li><img src="img/settings.png" alt=""></li>
+          <li><i class="fas fa-person"></i></li>
+          
         </ul>
       </div><!-- /.navbar-collapse -->
     </nav>
@@ -75,18 +76,21 @@
           </div>
         </div>
         <div class="col-md-2">
-          <button type="button" class="btn btn-primary btn-block" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <button type="button" class="btn btn-outline-secondary add-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <i class="fas fa-plus"></i> Add Project
           </button>
         </div>
       </div>
     </div>
-    <div>
-      <div style="padding: 15px 0;">
-        <a href="#" id="msbo"> <img src="img/left_arrow.png" alt="" srcset=""> </a>
-      </div>
-    </div>
   </section>
+
+  <!-- Sidebar toggle icon -->
+
+  <div>
+    <div class="mb-5" style="padding: -15px 0; margin-left: 200px;">
+      <a href="#" id="msbo"> <img src="img/left_arrow.png" alt="" srcset=""> </a>
+    </div>
+  </div>
 
   <!-- Dashboard -->
   <section id="Dashboard">
@@ -161,8 +165,8 @@
                   </div>
                 </div>
               </div>
-              <button type="button" class="btn text-uppercase btn-outline-secondary"
-                style="width: 100%; border: 1px solid #382f9c; font-size: 14px; font-weight: 500; color: #382f9c;">
+              <button type="button" class="btn text-uppercase view-btn btn-outline-secondary"
+                style="width: 100%; border: 1px solid #382f9c; font-size: 14px; font-weight: 500; ">
                 <img src="img/pdf.png" class="img-rounded" alt="Cinque Terre" style="margin: 0px 10px;">
                 Export as PDF
               </button>
@@ -249,26 +253,26 @@
             <li class="list-group-item">
               <img src="img/picture.png" class="img-rounded" alt="Cinque Terre">
               Screenshot
-              <button type="button" class="btn btn-outline-secondary">
+              <button type="button" class="btn btn-outline-secondary view-btn fw-bold" style="font-size: x-small;">
                 view
               </button>
             </li>
             <li class="list-group-item">
               <img src="img/picture.png" class="img-rounded" alt="Cinque Terre">
               Screenshot
-              <button type="button" class="btn btn-outline-secondary">
+              <button type="button" class="btn btn-outline-secondary view-btn fw-bold" style="font-size: x-small;">
                 view
               </button>
             </li>
             <li class="list-group-item">
               <img src="img/video_camera.png" class="img-rounded" alt="Cinque Terre">
               Screen record
-              <button type="button" class="btn btn-outline-secondary">
+              <button type="button" class="btn btn-outline-secondary play-btn fw-bold" style="font-size: x-small;">
                 Play
               </button>
             </li>
           </ul>
-          <button type="button" class="btn btn-outline-secondary" style="width: 100%;">
+          <button type="button" class="btn btn-outline-secondary view-btn  " style="width: 100%;">
             View all
           </button>
         </div>
