@@ -28,36 +28,55 @@
   <div class="msb" id="msb">
     <nav class="navbar navbar-default" role="navigation">
       <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        
+      <div class="navbar-logo">
+        <img src="img/logo.png" alt="" srcset="">
+
       </div>
 
       <!-- Main Menu -->
       <div class="side-menu-container text-white ">
 
-        <img src="img/logo.png" alt="" srcset="">
+        <ul class="nav navbar-nav">
 
-        <div>
-          <span></span>
-        </div>
+          <li class="mb-3"><a href="#" class="waves-effect active"><img src="img/speedometer.png" alt="" srcset="">
+            <span class="mx-2">Dashboard</span>
+
+          </a></li>
+          <!-- <li class="active"><a href="#"> <> Dashboard</a></li> -->
+          <li class="mb-3"><a href="#"> <img src="img/graph.png" alt="" srcset="">
+              <span class="mx-2">Activity</span>
+            </a></li>
+          <li class="mb-3"><a href="#"> <img src="img/timer_white.png" alt="" srcset=""> 
+            <span class="mx-2">Timesheet</span>
+            </a></li> 
+        </ul>
 
         <ul class="nav navbar-nav">
-          <li><a href="#" class="waves-effect active"><img src="img/speedometer.png" alt="" srcset=""><span>Dashboard </span></a></li>
-          <li class="active"><a href="#"> <> Dashboard</a></li>
-          <li><a href="#"> <img src="img/graph.png" alt="" srcset=""> Activity</a></li>
-          <li><a href="#"> <img src="img/timer_white.png" alt="" srcset=""> Timesheet</a></li>
-          <li><a href="#"> <img src="img/icons8-today-96.png" alt="" srcset=""> To-do</a></li>
-          <li><a href="#"> <img src="img/bill.png" alt="" srcset=""> Invoice</a></li>
-          <li><a href="#"> <img src="img/folder.png" alt="" srcset=""> Project</a></li>
-          <li><a href="#"> <img src="img/help.png" alt="" srcset=""> Help</a></li>
-          <li><a href="#"> <img src="img/download.png" alt="" srcset=""> Download App</a></li>
+          <li class="mb-3"><a href="#"> <img src="img/icons8-today-96.png" alt="" srcset=""> 
+            <span class="mx-2">To-do</span>
+            </a></li>
+          <li class="mb-3"><a href="#"> <img src="img/bill.png" alt="" srcset="">
+            <span class="mx-2">Invoice</span>
+            </a></li>
+          <li class="mb-3"><a href="#"> <img src="img/folder.png" alt="" srcset=""> 
+            <span class="mx-2">Project</span>
+            </a></li>
         </ul>
-        <ul>
-          <li><img src="img/notification.png" alt=""></li>
-          <li><img src="img/settings.png" alt=""></li>
-          <li><i class="fas fa-person"></i></li>
 
+        <ul class="nav navbar-nav">
+          <li class="mb-3"><a href="#"> <img src="img/help.png" alt="" srcset="">
+            <span class="mx-2">Help</span>
+            </a></li>
+          <li class="mb-3"><a href="#"> <img src="img/download.png" alt="" srcset="">
+            <span class="mx-2">Download App</span>
+            </a></li>
         </ul>
+        <span class="footer">
+          <img src="img/notification.png" alt="">
+          <img src="img/settings.png" alt="">
+          <i class="fas fa-person"></i>
+
+        </span>
       </div><!-- /.navbar-collapse -->
     </nav>
   </div>
@@ -94,12 +113,10 @@
   </section>
 
   <!-- Sidebar toggle icon -->
-
-  <div>
-    <div style="margin: -41px 184px; position: absolute;">
-      <a href="#" id="msbo"> <img src="img/left_arrow.png" alt="" srcset=""> </a>
-    </div>
+  <div class="msbo">
+    <a href="#" id="msbo"> <img src="img/left_arrow.png" alt="" srcset=""> </a>
   </div>
+
 
   <!-- Dashboard -->
   <section id="Dashboard">
@@ -294,10 +311,12 @@
                     View
                   </button>
                 </div>
+                <button type="button" class=" btn btn-outline-secondary view-btn  " style="width: 97%;margin-top: 12px;">
+                  View all
+                </button>
             </div>
-            <button type="button" class="btn btn-outline-secondary view-btn  " style="width: 100%;">
-              View all
-            </button>
+
+            
           </div>
         </div>
     </div>
