@@ -172,15 +172,52 @@ body {
 }
 
 .pad {
-  padding: 6px 12px;
+  padding: 10px 12px;
 }
 
+.shad{
+  box-shadow: rgb(149 157 165 / 13%) 0px 10px 13px;
+}
 .t-15 {
   font-size: 15px;
 }
 
 .t-12 {
   font-size: 12px;
+}
+
+.date{
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.purp{
+  color: #382F9C;
+}
+
+.mon{
+  font-size: 12px;
+  margin-top: -7px;
+}
+
+.grey-border{
+  border-bottom: 1px solid #cfc6c6;
+}
+
+.grey-border-right{
+  border-right: 1px solid #cfc6c6;
+}
+
+.py7{
+  padding: 0.7rem 0;
+}
+
+.btn-outline-secondary{
+  border-color: #dbd6d6;
+}
+
+tr{
+  border-bottom: hidden;
 }
 
 /* Naveen Navbar */
