@@ -23,61 +23,56 @@
 </head>
 
 <body>
-  <!-- Naveen SPN -->
   <!-- Sidebar -->
   <div class="msb" id="msb">
     <nav class="navbar navbar-default" role="navigation">
-      <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-logo">
         <img src="img/logo.png" alt="" srcset="">
-
       </div>
 
       <!-- Main Menu -->
-      <div class="side-menu-container text-white ">
-
-        <ul class="nav navbar-nav">
-
-          <li class="mb-3"><a href="#" class="waves-effect active"><img src="img/speedometer.png" alt="" srcset="">
-            <span class="mx-2">Dashboard</span>
-
-          </a></li>
-          <!-- <li class="active"><a href="#"> <> Dashboard</a></li> -->
-          <li class="mb-3"><a href="#"> <img src="img/graph.png" alt="" srcset="">
-              <span class="mx-2">Activity</span>
-            </a></li>
-          <li class="mb-3"><a href="#"> <img src="img/timer_white.png" alt="" srcset=""> 
-            <span class="mx-2">Timesheet</span>
-            </a></li> 
-        </ul>
-
-        <ul class="nav navbar-nav">
-          <li class="mb-3"><a href="#"> <img src="img/icons8-today-96.png" alt="" srcset=""> 
-            <span class="mx-2">To-do</span>
-            </a></li>
-          <li class="mb-3"><a href="#"> <img src="img/bill.png" alt="" srcset="">
-            <span class="mx-2">Invoice</span>
-            </a></li>
-          <li class="mb-3"><a href="#"> <img src="img/folder.png" alt="" srcset=""> 
-            <span class="mx-2">Project</span>
-            </a></li>
-        </ul>
-
-        <ul class="nav navbar-nav">
-          <li class="mb-3"><a href="#"> <img src="img/help.png" alt="" srcset="">
-            <span class="mx-2">Help</span>
-            </a></li>
-          <li class="mb-3"><a href="#"> <img src="img/download.png" alt="" srcset="">
-            <span class="mx-2">Download App</span>
-            </a></li>
-        </ul>
-        <span class="footer">
+      <div class=" side-menu-container text-white ">
+        <div class="">
+          <ul class="nav navbar-nav">
+            <li class="mb-3"><a href="#" class="waves-effect active"><img src="img/speedometer.png" alt="" srcset="">
+                <span class="mx-2">Dashboard</span>
+              </a></li>
+            <!-- <li class="active"><a href="#"> <> Dashboard</a></li> -->
+            <li class="mb-3"><a href="#"> <img src="img/graph.png" alt="" srcset="">
+                <span class="mx-2">Activity</span>
+              </a></li>
+            <li class="mb-3"><a href="#"> <img src="img/timer_white.png" alt="" srcset="">
+                <span class="mx-2">Timesheet</span>
+              </a></li>
+          </ul>
+          <ul class="nav navbar-nav">
+            <li class="mb-3"><a href="#"> <img src="img/icons8-today-96.png" alt="" srcset="">
+                <span class="mx-2">To-do</span>
+              </a></li>
+            <li class="mb-3"><a href="#"> <img src="img/bill.png" alt="" srcset="">
+                <span class="mx-2">Invoice</span>
+              </a></li>
+            <li class="mb-3"><a href="#"> <img src="img/folder.png" alt="" srcset="">
+                <span class="mx-2">Project</span>
+              </a></li>
+          </ul>
+          <ul class="nav navbar-nav">
+            <li class="mb-3"><a href="#"> <img src="img/help.png" alt="" srcset="">
+                <span class="mx-2">Help</span>
+              </a></li>
+            <li class="mb-3"><a href="#"> <img src="img/download.png" alt="" srcset="">
+                <span class="mx-2">Download App</span>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer">
+        <span class=" d-flex justify-content-around align-items-center" style="width: 100%;">
           <img src="img/notification.png" alt="">
           <img src="img/settings.png" alt="">
           <i class="fas fa-person"></i>
-
         </span>
-      </div><!-- /.navbar-collapse -->
+      </div>
     </nav>
   </div>
 
@@ -117,213 +112,200 @@
     <a href="#" id="msbo"> <img src="img/left_arrow.png" alt="" srcset=""> </a>
   </div>
 
-
   <!-- Dashboard -->
   <section id="Dashboard">
     <div class="container">
-        <div class="row grey-border">
-          <!-- Timesheet -->
-          <div class="col-md-8 grey-border-right">
-            <div class="row mb-4">
-              <div class="col">
-                <h5>Time sheet</h5>
-              </div>
-              <div class="col d-flex justify-content-end">
-                <a href="details.html" class="btn btn-secondary time-sheet-btn">
-                  Full Timesheet
-                </a>
-                <a href="details.html" class="btn">
-                  <i class="fas fa-solid fa-ellipsis"></i>
-                </a>
-              </div>
+      <div class="row grey-border">
+        <!-- Timesheet -->
+        <div class="col-md-8 grey-border-right">
+          <div class="row mb-4">
+            <div class="col">
+              <h5>Time sheet</h5>
             </div>
-            <table class="table table-striped">
-              <thead class="thead-dark">
-                <tr>
-                  <th>Project</th>
-                  <th>Date</th>
-                  <th>Start Time</th>
-                  <th>End Time</th>
-                  <th>Duration</th>
-                </tr>
-              </thead>
-              <tbody class="exercise-list">
+            <div class="col d-flex justify-content-end">
+              <a href="details.html" class="btn btn-secondary time-sheet-btn">
+                Full Timesheet
+              </a>
+              <a href="details.html" class="btn">
+                <i class="fas fa-solid fa-ellipsis"></i>
+              </a>
+            </div>
+          </div>
+          <table class="table table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th>Project</th>
+                <th>Date</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Duration</th>
+              </tr>
+            </thead>
+            <tbody class="project-list">
 
-              </tbody>
-            </table>
-          </div>
-          <!-- Report -->
-          <div class="col-md-4">
-            <div class="mb-3">
-              
-              <div class="container">
-                <h5 class="mb-4">Report</h5>
-                <div class="card bg-color text-white mb-3">
-                  <div class="card-body ">
-                    <div class="d-flex align-items-center ">
-                      <div class="col-md-3 card-img-st">
-                        <img src="img/graph.png" alt="">
-                      </div>
-                      <div class="col-md-7">
-                        <div class="card-text-active">Weekly activity</div>
-                        <span>57%</span>
-                      </div>
-                      <div class="col-md-2 incre">
-                        <i class="fa-solid fa-caret-up icon-style"></i>
-                        <span class="incre-font"> 17%</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card mb-4 bg-light">
-                  <div class="card-body">
-                    <div class="d-flex align-items-center ">
-                      <div class="col-md-3 card-img-st1">
-                        <img src="img/timer_blue.png" alt="">
-                      </div>
-                      <div class="col-md-7">
-                        <div class="card-text-active1">Weekly activity</div>
-                        <span>57%</span>
-                      </div>
-                      <div class="col-md-2 decre">
-                        <i class="fa-solid fa-caret-down icon-style text-danger"></i>
-                        <span class="incre-font text-danger"> 17%</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <button type="button" class="btn text-uppercase view-btn btn-outline-secondary"
-                  style="width: 100%; border: 1px solid #382f9c; font-size: 14px; font-weight: 500; ">
-                  <img src="img/pdf.png" class="img-rounded" alt="Cinque Terre" style="margin: 0px 10px;">
-                  Export as PDF
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- Todo list -->
+            </tbody>
+          </table>
         </div>
-        <div class="row">
-          <div class="col-md-8 grey-border-right">
-            <h5 class="mt-3">Todo List</h5>
-            <div class="d-flex align-items-center mb-3">
-              <div class="col-md-1">
-                <div class="row">
-                  <p class="text-center mb-0 date purp">06</p>
-                  <p class="text-center mb-0 mon purp">May</p>
-                </div>
-              </div>
-              <div class="col-md-11 shad">
-                <div class="card ">
-                  <div class="card-body pad">
-                    <div class="row">
-                      <div class="col-11">
-                        <h5 class="card-title mb-0 t-15">Revamp Instagram app</h5>
-                        <p class="card-text mb-0 t-12"><small class="text-muted">Today</small></p>
-                      </div>
-                      <div class="col-1">
-                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                      </div>
+        <!-- Report -->
+        <div class="col-md-4">
+          <div class="mb-3">
+            <div class="container">
+              <h5 class="mb-4">Report</h5>
+              <div class="card bg-color text-white mb-3">
+                <div class="card-body ">
+                  <div class="d-flex align-items-center ">
+                    <div class="col-md-3 card-img-st">
+                      <img src="img/graph.png" alt="">
                     </div>
-
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="d-flex align-items-center mb-3">
-              <div class="col-md-1">
-                <div class="row">
-                  <p class="text-center mb-0 date">06</p>
-                  <p class="text-center mb-0 mon">May</p>
-                </div>
-              </div>
-              <div class="col-md-11">
-                <div class="card bg-light">
-                  <div class="card-body pad">
-                    <div class="row">
-                      <div class="col-11">
-                        <h5 class="card-title mb-0 t-15">Revamp Instagram app</h5>
-                        <p class="card-text mb-0 t-12"><small class="text-muted">Today</small></p>
-                      </div>
-                      <div class="col-1">
-                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                      </div>
+                    <div class="col-md-7">
+                      <div class="card-text-active">Weekly activity</div>
+                      <span>57%</span>
+                    </div>
+                    <div class="col-md-2 incre">
+                      <i class="fa-solid fa-caret-up icon-style"></i>
+                      <span class="incre-font"> 17%</span>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="d-flex align-items-center">
-              <div class="col-md-1">
-                <div class="row">
-                  <p class="text-center mb-0 date">06</p>
-                  <p class="text-center mb-0 mon">May</p>
-                </div>
-              </div>
-              <div class="col-md-11">
-                <div class="card bg-light">
-                  <div class="card-body pad">
-                    <div class="row">
-                      <div class="col-11">
-                        <h5 class="card-title mb-0 t-15">Revamp Instagram app</h5>
-                        <p class="card-text mb-0 t-12"><small class="text-muted">Today</small></p>
-                      </div>
-                      <div class="col-1">
-                        <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                      </div>
+              <div class="card mb-4 bg-light">
+                <div class="card-body">
+                  <div class="d-flex align-items-center ">
+                    <div class="col-md-3 card-img-st1">
+                      <img src="img/timer_blue.png" alt="">
+                    </div>
+                    <div class="col-md-7">
+                      <div class="card-text-active1">Weekly activity</div>
+                      <span>57%</span>
+                    </div>
+                    <div class="col-md-2 decre">
+                      <i class="fa-solid fa-caret-down icon-style text-danger"></i>
+                      <span class="incre-font text-danger"> 17%</span>
                     </div>
                   </div>
                 </div>
               </div>
+              <button type="button" class="btn text-uppercase view-btn btn-outline-secondary"
+                style="width: 100%; border: 1px solid #382f9c; font-size: 14px; font-weight: 500; ">
+                <img src="img/pdf.png" class="img-rounded" alt="Cinque Terre" style="margin: 0px 10px;">
+                Export as PDF
+              </button>
             </div>
-          </div>
-          <!-- Screenshots -->
-          <div class="col-md-4">
-            
-            <div class="pb-4 container">
-              <h5 class="mt-3" >Screenshots</h5>
-                <div class="row col-md-12 pb-3 pt-3 grey-border align-items-center">
-
-                  <img src="img/picture.png" class="img-rounded col-md-2" alt="Cinque Terre">
-                  <p class="col-md-8 mb-0">Screenshot</p>
-                  <button type="button" class="btn col-md-2 btn-outline-secondary view-btn fw-bold"
-                    style="font-size: x-small;">
-                    View
-                  </button>
-                </div>
-
-                <div class="row col-md-12 pb-3 pt-3 grey-border align-items-center">
-
-                  <img src="img/picture.png" class="img-rounded col-md-2" alt="Cinque Terre">
-                  <p class="col-md-8 mb-0">Screenshot</p>
-                  <button type="button" class="btn col-md-2 btn-outline-secondary view-btn fw-bold"
-                    style="font-size: x-small;">
-                    View
-                  </button>
-                </div>
-
-                <div class="row col-md-12 pb-3 pt-3 grey-border align-items-center">
-
-                  <img src="img/picture.png" class="img-rounded col-md-2" alt="Cinque Terre">
-                  <p class="col-md-8 mb-0">Screenshot</p>
-                  <button type="button" class="btn col-md-2 btn-outline-secondary view-btn fw-bold"
-                    style="font-size: x-small;">
-                    View
-                  </button>
-                </div>
-                <button type="button" class=" btn btn-outline-secondary view-btn  " style="width: 97%;margin-top: 12px;">
-                  View all
-                </button>
-            </div>
-
-            
           </div>
         </div>
+        <!-- Todo list -->
+      </div>
+      <div class="row">
+        <div class="col-md-8 grey-border-right">
+          <h5 class="mt-3">Todo List</h5>
+          <div class="d-flex align-items-center mb-3">
+            <div class="col-md-1">
+              <div class="row">
+                <p class="text-center mb-0 date purp">06</p>
+                <p class="text-center mb-0 mon purp">May</p>
+              </div>
+            </div>
+            <div class="col-md-11 shad">
+              <div class="card ">
+                <div class="card-body pad">
+                  <div class="row">
+                    <div class="col-11">
+                      <h5 class="card-title mb-0 t-15">Revamp Instagram app</h5>
+                      <p class="card-text mb-0 t-12"><small class="text-muted">Today</small></p>
+                    </div>
+                    <div class="col-1">
+                      <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mb-3">
+            <div class="col-md-1">
+              <div class="row">
+                <p class="text-center mb-0 date">06</p>
+                <p class="text-center mb-0 mon">May</p>
+              </div>
+            </div>
+            <div class="col-md-11">
+              <div class="card bg-light">
+                <div class="card-body pad">
+                  <div class="row">
+                    <div class="col-11">
+                      <h5 class="card-title mb-0 t-15">Revamp Instagram app</h5>
+                      <p class="card-text mb-0 t-12"><small class="text-muted">Today</small></p>
+                    </div>
+                    <div class="col-1">
+                      <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="col-md-1">
+              <div class="row">
+                <p class="text-center mb-0 date">06</p>
+                <p class="text-center mb-0 mon">May</p>
+              </div>
+            </div>
+            <div class="col-md-11">
+              <div class="card bg-light">
+                <div class="card-body pad">
+                  <div class="row">
+                    <div class="col-11">
+                      <h5 class="card-title mb-0 t-15">Revamp Instagram app</h5>
+                      <p class="card-text mb-0 t-12"><small class="text-muted">Today</small></p>
+                    </div>
+                    <div class="col-1">
+                      <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Screenshots -->
+        <div class="col-md-4">
+          <div class="pb-4 container">
+            <h5 class="mt-3">Screenshots</h5>
+            <div class="row col-md-12 pb-3 pt-3 grey-border align-items-center">
+              <img src="img/picture.png" class="img-rounded col-md-2" alt="Cinque Terre">
+              <p class="col-md-8 mb-0">Screenshot</p>
+              <button type="button" class="btn col-md-2 btn-outline-secondary view-btn fw-bold"
+                style="font-size: x-small;">
+                View
+              </button>
+            </div>
+            <div class="row col-md-12 pb-3 pt-3 grey-border align-items-center">
+              <img src="img/picture.png" class="img-rounded col-md-2" alt="Cinque Terre">
+              <p class="col-md-8 mb-0">Screenshot</p>
+              <button type="button" class="btn col-md-2 btn-outline-secondary view-btn fw-bold"
+                style="font-size: x-small;">
+                View
+              </button>
+            </div>
+            <div class="row col-md-12 pb-3 pt-3 grey-border align-items-center">
+              <img src="img/picture.png" class="img-rounded col-md-2" alt="Cinque Terre">
+              <p class="col-md-8 mb-0">Screenshot</p>
+              <button type="button" class="btn col-md-2 btn-outline-secondary view-btn fw-bold"
+                style="font-size: x-small;">
+                View
+              </button>
+            </div>
+            <button type="button" class=" btn btn-outline-secondary view-btn  " style="width: 97%;margin-top: 12px;">
+              View all
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- MODALS -->
-
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -333,7 +315,6 @@
         </div>
         <form class="needs-validation" novalidate>
           <div class="modal-body">
-
             <div class="form-group">
               <label for="validationCustom01" class="form-label">Project Name</label>
               <input type="text" class="form-control" id="validationCustom01" required>
@@ -348,7 +329,6 @@
                 Please select a date
               </div>
             </div>
-
             <div class="form-group">
               <label for="validationCustom03" class="form-label">Start time</label>
               <input type="time" class="form-control" id="validationCustom03" required>
@@ -356,7 +336,6 @@
                 Please enter a start time
               </div>
             </div>
-
             <div class="form-group">
               <label for="validationCustom04" class="form-label">Start time</label>
               <input type="time" class="form-control" id="validationCustom04" required>
@@ -364,7 +343,6 @@
                 Please enter a start time
               </div>
             </div>
-
           </div>
           <div class="form-group modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

@@ -1,4 +1,4 @@
-var exerciseObjects = [
+var projectObjects = [
 
     {
         id: 0,
@@ -39,22 +39,20 @@ var exerciseObjects = [
 
 function Update() {
 
-    let exerciseList = document.querySelector('.exercise-list')
-    let exerciseItems = ''
+    let projectList = document.querySelector('.project-list')
+    let projectItems = ''
 
-    for (exercise of exerciseObjects) {
-        //console.log(people[i].name);
-        // exerciseItems += '<tr>' + '<td>' + exercise.id + '</td>' + '<td>' + exercise.name + '</td>' + '</tr>'
-        exerciseItems += `<tr>  
-                            <td>  ${exercise.id}.${exercise.name}  </td>
-                            <td> ${exercise.date} </td>
-                            <td> ${exercise.start_time} </td>
-                            <td> ${exercise.end_time} </td>
-                            <td> ${exercise.duartion} </td>
+    for (project of projectObjects) {
+        projectItems += `<tr>  
+                            <td> <span class="number"> ${project.id}</span>${project.name}  </td>
+                            <td> ${project.date} </td>
+                            <td> ${project.start_time} </td>
+                            <td> ${project.end_time} </td>
+                            <td> ${project.duartion} </td>
                         </tr>`
     }
 
-    exerciseList.innerHTML = exerciseItems
+    projectList.innerHTML = projectItems
 
 };
 Update();
@@ -87,9 +85,9 @@ Update();
                 // const start_time = startTimeInput.value;
                 // const end_time = endTimeInput.value;
 
-                // idInc = exerciseObjects[exerciseObjects.length - 1].id;
+                // idInc = projectObjects[projectObjects.length - 1].id;
 
-                // exerciseObjects.push({
+                // projectObjects.push({
                 //     id: idInc + 1,
                 //     name: name1,
                 //     date: date,
@@ -101,7 +99,7 @@ Update();
             }
             
 
-            //     console.log(exerciseObjects);
+            //     console.log(projectObjects);
             }, false)
             
         })
