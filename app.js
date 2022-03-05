@@ -72,13 +72,15 @@ Update();
             }, false)
 
         })
-})()
+})();
+
 function addRuler() {
     jQuery("ul.nav.navbar-nav").append("<hr class='sidebar-sep'/>");
 }
-addRuler()
-    (function () {
-        document.querySelector('#msbo').addEventListener('click', function () {
-            document.querySelector('body').classList.toggle('msb-x');
-        });
-    }());
+addRuler();
+
+(function () {
+    document.querySelector('#msbo').addEventListener('click', function () {
+        document.querySelector('body').classList.toggle('msb-x');
+    });
+}());
