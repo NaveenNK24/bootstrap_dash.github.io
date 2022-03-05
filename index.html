@@ -7,17 +7,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/style.css">
 
   <link
-  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-  rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
 
   <title>Bootstrap </title>
 </head>
@@ -35,48 +35,53 @@
         <div class="">
           <ul class="nav navbar-nav">
             <li class="mb-3"><a href="#" class="waves-effect active">
-              <i class="fa-1_5x fa-solid fa-gauge-high"></i>
-              <span class="mx-2">Dashboard</span>
-            </a></li>
-            <li class="mb-3"><a href="#"> 
-              <i class="fa-1_5x fa-solid fa-chart-line"></i>
-              <span class="mx-2">Activity</span>
-            </a></li>
-            <li class="mb-3"><a href="#"> 
-              <i class="fa-1_5x fa-solid fa-clock-rotate-left"></i>
-              <span class="mx-2">Timesheet</span>
-            </a></li>
+                <i class="fa-1_5x fa-solid fa-gauge-high"></i>
+                <span class="mx-2">Dashboard</span>
+              </a></li>
+            <li class="mb-3"><a href="#">
+                <i class="fa-1_5x fa-solid fa-chart-line"></i>
+                <span class="mx-2">Activity</span>
+              </a></li>
+            <li class="mb-3"><a href="#">
+                <i class="fa-1_5x fa-solid fa-clock-rotate-left"></i>
+                <span class="mx-2">Timesheet</span>
+              </a></li>
+          </ul>
+
+          <ul class="nav navbar-nav">
+            <li class="mb-3"><a href="#">
+                <i class="fa-1_5x fa-solid fa-calendar-check"></i>
+                <span class="mx-2">To-Do</span>
+              </a></li>
+            <li class="mb-3"><a href="#">
+                <i class="fa-1_5x fa-solid fa-receipt"></i>
+                <span class="mx-2">Invoice</span>
+              </a></li>
+            <li class="mb-3"><a href="#">
+                <i class="fa-1_5x fa-solid fa-folder"></i>
+                <span class="mx-2">Project</span>
+              </a></li>
           </ul>
           <ul class="nav navbar-nav">
-            <li class="mb-3"><a href="#"> 
-              <i class="fa-1_5x fa-solid fa-calendar-check"></i>
-              <span class="mx-2">To-Do</span>
-            </a></li>
-            <li class="mb-3"><a href="#"> 
-              <i class="fa-1_5x fa-solid fa-receipt"></i>
-              <span class="mx-2">Invoice</span>
-            </a></li>
-            <li class="mb-3"><a href="#"> 
-              <i class="fa-1_5x fa-solid fa-folder"></i>
-              <span class="mx-2">Project</span>
-            </a></li>
-          </ul>
-          <ul class="nav navbar-nav">
-            <li class="mb-3"><a href="#"> 
-              <i class="fa-1_5x fa-solid fa-circle-question"></i>
-              <span class="mx-2">Help</span>
-            </a></li>
+            <li class="mb-3"><a href="#">
+                <i class="fa-1_5x fa-solid fa-circle-question"></i>
+                <span class="mx-2">Help</span>
+              </a></li>
             <li class="mb-3"><a href="#"> <i class="fa-1_5x fa-solid fa-download"></i>
-              <span class="mx-2">Download App</span>
-            </a></li>
+                <span class="mx-2">Download App</span>
+              </a></li>
           </ul>
         </div>
       </div>
       <div class="footer w-100">
         <span class=" d-flex justify-content-around align-items-center">
-          <img src="img/notification.png" alt="">
+          <i class="fa-1_5x text-white fa-solid fa-bell">
+            <span class="badge bg-danger position-absolute rounded-pill translate-middle" style="font-size: 8px;">
+              99+
+              <span class="visually-hidden">unread messages</span>
+            </span></i>
           <img src="img/settings.png" alt="">
-          <i class="fa-1_5x fa-solid fa-circle-user fa-white"></i>
+          <i class="fa-1_5x  fa-solid fa-circle-user fa-white"></i>
         </span>
       </div>
     </nav>
@@ -91,285 +96,283 @@
             <div class="btn-group">
               <button type="button" class="btn btn-outline-secondary bg-light text-black">Design Task</button>
               <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
-              type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false"
-              data-bs-reference="parent">
-              <span class="visually-hidden">Toggle Dropdown</span>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <li><button class="dropdown-item" type="button">Design Task 1</button></li>
-              <li><button class="dropdown-item" type="button">Design Task 2</button></li>
-              <li><button class="dropdown-item" type="button">Design Task 3</button></li>
-            </ul>
+                type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false"
+                data-bs-reference="parent">
+                <span class="visually-hidden">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <li><button class="dropdown-item" type="button">Design Task 1</button></li>
+                <li><button class="dropdown-item" type="button">Design Task 2</button></li>
+                <li><button class="dropdown-item" type="button">Design Task 3</button></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-2">
-        <button type="button" class="btn btn-outline-secondary add-btn" data-bs-toggle="modal"
-        data-bs-target="#exampleModal">
-        <i class="fas fa-plus"></i> Add Project
-      </button>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- Sidebar toggle icon -->
-<div class="msbo">
-  <a href="#" id="msbo"> <i class="fa-solid fa-circle-chevron-left fa-2x side-pane-icon"></i> </a>
-</div>
-
-<!-- Dashboard -->
-<section id="Dashboard">
-  <div class="container">
-    <div class="row grey-border">
-      <!-- Timesheet -->
-      <div class="col-md-8 grey-border-right">
-        <div class="row mb-4">
-          <div class="col">
-            <p class="fw-bold fs-5">Timesheet</p>
-          </div>
-          <div class="col d-flex justify-content-end align-items-center">
-            <a href="details.html" class="btn btn-secondary time-sheet-btn">
-              Full Timesheet
-            </a>
-            <a href="details.html" class="btn">
-              <i class="fas fa-solid fa-ellipsis"></i>
-            </a>
-          </div>
-        </div>
-        <table class="table table-striped table-bordered">
-          <thead class="thead-dark">
-            <tr>
-              <th>Project</th>
-              <th>Date</th>
-              <th>Start Time</th>
-              <th>End Time</th>
-              <th>Duration</th>
-            </tr>
-          </thead>
-          <tbody class="project-list">
-
-          </tbody>
-        </table>
-      </div>
-      <!-- Report -->
-      <div class="col-md-4">
-        <div class="mb-3">
-          <div class="container">
-            <h5 class="mb-4">Report</h5>
-            <div class="card bg-color text-white mb-3">
-              <div class="card-body ">
-                <div class="d-flex align-items-center ">
-                  <div class="col-md-3 card-img-st">
-                    <img src="img/graph.png" alt="">
-                  </div>
-                  <div class="col-md-7">
-                    <div class="card-text-active">Weekly activity</div>
-                    <span>57%</span>
-                  </div>
-                  <div class="col-md-2 incre">
-                    <i class="fa-solid fa-caret-up icon-style"></i>
-                    <span class="incre-font"> 17%</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card mb-4 bg-light">
-              <div class="card-body">
-                <div class="d-flex align-items-center ">
-                  <div class="col-md-3 card-img-st1">
-                    <img src="img/timer_blue.png" alt="">
-                  </div>
-                  <div class="col-md-7">
-                    <div class="card-text-active1">Worked this week</div>
-                    <span> <strong> 11:56:33</strong></span>
-                  </div>
-                  <div class="col-md-2 decre">
-                    <i class="fa-solid fa-caret-down icon-style text-danger"></i>
-                    <span class="incre-font text-danger"> 17%</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button type="button" class="btn text-uppercase view-btn btn-outline-secondary"
-            style="width: 100%; border: 1px solid #382f9c; font-size: 14px; font-weight: 500; ">
-            <i class="fa-solid fa-file-pdf fa-1_5x"></i>
-            Export as PDF
+        <div class="col-md-2">
+          <button type="button" class="btn btn-outline-secondary add-btn" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            <i class="fas fa-plus"></i> Add Project
           </button>
         </div>
       </div>
     </div>
-    <!-- Todo list -->
+  </section>
+
+  <!-- Sidebar toggle icon -->
+  <div class="msbo">
+    <a href="#" id="msbo"> <i class="fa-solid fa-circle-chevron-left fa-2x side-pane-icon"></i> </a>
   </div>
-  <div class="row">
-    <div class="col-md-8 grey-border-right">
-      <h5 class="mt-3 fw-bold">To - Do lists</h5>
-      <div class="d-flex align-items-center mb-3">
-        <div class="col-md-1">
-          <div class="row">
-            <p class="text-center mb-0 date purp">06</p>
-            <p class="text-center mb-0 mon purp">May</p>
+
+  <!-- Dashboard -->
+  <section id="Dashboard">
+    <div class="container">
+      <div class="row grey-border">
+        <!-- Timesheet -->
+        <div class="col-md-8 grey-border-right">
+          <div class="row mb-4">
+            <div class="col">
+              <p class="fw-bold fs-5">Timesheet</p>
+            </div>
+            <div class="col d-flex justify-content-end align-items-center">
+              <a href="details.html" class="btn btn-secondary time-sheet-btn">
+                Full Timesheet
+              </a>
+              <a href="details.html" class="btn">
+                <i class="fas fa-solid fa-ellipsis"></i>
+              </a>
+            </div>
+          </div>
+          <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+              <tr>
+                <th>Project</th>
+                <th>Date</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Duration</th>
+              </tr>
+            </thead>
+            <tbody class="project-list">
+
+            </tbody>
+          </table>
+        </div>
+        <!-- Report -->
+        <div class="col-md-4">
+          <div class="mb-3">
+            <div class="container">
+              <h5 class="mb-4 fw-bold">Report</h5>
+              <div class="card bg-color text-white mb-3">
+                <div class="card-body ">
+                  <div class="d-grid align-items-center " style="grid-template-columns: 0.3fr 1fr .3fr;">
+                    <div class=" card-img-st">
+                      <img src="img/graph.png" alt="">
+                    </div>
+                    <div class="">
+                      <div class="card-text-active">Weekly activity</div>
+                      <span>57%</span>
+                    </div>
+                    <div class=" incre">
+                      <i class="fa-solid fa-caret-up icon-style"></i>
+                      <span class="incre-font"> 17%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-4 bg-light">
+                <div class="card-body">
+                  <div class="d-grid align-items-center " style="grid-template-columns: 0.3fr 1fr .3fr;">
+                    <div class=" card-img-st1">
+                      <img src="img/timer_blue.png" alt="">
+                    </div>
+                    <div class="">
+                      <div class="card-text-active1">Worked this week</div>
+                      <span> <strong> 11:56:33</strong></span>
+                    </div>
+                    <div class=" decre">
+                      <i class="fa-solid fa-caret-down icon-style text-danger"></i>
+                      <span class="incre-font text-danger"> 17%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="btn text-uppercase view-btn btn-outline-secondary"
+                style="width: 100%; border: 1px solid #382f9c; font-size: 14px; font-weight: 500; ">
+                <i class="fa-solid fa-file-pdf fa-1_5x"></i>
+                Export as PDF
+              </button>
+            </div>
           </div>
         </div>
-        <div class="col-md-11 shad">
-          <div class="card ">
-            <div class="card-body pad">
+        <!-- Todo list -->
+      </div>
+      <div class="row">
+        <div class="col-md-8 grey-border-right">
+          <h5 class="mt-3 fw-bold">To - Do lists</h5>
+          <div class="d-flex align-items-center mb-3">
+            <div class="col-md-1">
               <div class="row">
-                <div class="col-11">
-                  <h5 class="card-title mb-0 t-15">Revamp Instagram app</h5>
-                  <p class="card-text mb-0 t-12"><small class="text-muted">Today</small></p>
+                <p class="text-center mb-0 date purp">06</p>
+                <p class="text-center mb-0 mon purp">May</p>
+              </div>
+            </div>
+            <div class="col-md-11 shad">
+              <div class="card ">
+                <div class="card-body pad">
+                  <div class="row">
+                    <div class="col-11">
+                      <h5 class="card-title mb-0 t-15">Revamp Instagram app</h5>
+                      <p class="card-text mb-0 t-12"><small class="text-muted">Today</small></p>
+                    </div>
+                    <div class="col-1">
+                      <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-1">
-                  <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center mb-3">
+            <div class="col-md-1">
+              <div class="row">
+                <p class="text-center mb-0 date">26</p>
+                <p class="text-center mb-0 mon">May</p>
+              </div>
+            </div>
+            <div class="col-md-11">
+              <div class="card bg-light">
+                <div class="card-body pad">
+                  <div class="row">
+                    <div class="col-11">
+                      <h5 class="card-title mb-0 t-15">Prototyping</h5>
+                      <p class="card-text mb-0 t-12"><small class="text-muted">Upcoming</small></p>
+                    </div>
+                    <div class="col-1">
+                      <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center">
+            <div class="col-md-1">
+              <div class="row">
+                <p class="text-center mb-0 date">16</p>
+                <p class="text-center mb-0 mon">May</p>
+              </div>
+            </div>
+            <div class="col-md-11">
+              <div class="card bg-light">
+                <div class="card-body pad">
+                  <div class="row">
+                    <div class="col-11">
+                      <h5 class="card-title mb-0 t-15">Collect References for new project</h5>
+                      <p class="card-text mb-0 t-12"><small class="text-muted">Upcoming</small></p>
+                    </div>
+                    <div class="col-1">
+                      <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="d-flex align-items-center mb-3">
-        <div class="col-md-1">
-          <div class="row">
-            <p class="text-center mb-0 date">26</p>
-            <p class="text-center mb-0 mon">May</p>
+        <!-- Screenshots -->
+        <div class="col-md-4">
+          <div class="pb-4 container">
+            <h5 class="mt-3 fw-bold">Screenshots</h5>
+            <div class="grey-border  rowWrapper">
+              <img src="img/picture.png" class="img-rounded" alt="Cinque Terre">
+              <p class="col-md-8 mb-0">shot_1_attach_1.png</p>
+              <button type="button" class="btn col-md-2 w-100 btn-outline-secondary view-btn fw-bold"
+                style="font-size: x-small;">
+                View
+              </button>
+            </div>
+            <div class="grey-border rowWrapper">
+              <img src="img/picture.png" class="img-rounded" alt="Cinque Terre">
+              <p class="col-md-8 mb-0">shot_1_attach_3.png</p>
+              <button type="button" class="btn col-md-2 w-100 btn-outline-secondary view-btn fw-bold"
+                style="font-size: x-small;">
+                View
+              </button>
+            </div>
+            <div class="grey-border rowWrapper">
+              <img src="img/video_camera.png" class="img-rounded" alt="Cinque Terre">
+              <p class="col-md-8 mb-0">Screen_record_12.mov</p>
+              <button type="button" class="btn col-md-2 w-100 btn-outline-secondary view-btn fw-bold"
+                style="font-size: x-small;">
+                View
+              </button>
+            </div>
+            <button type="button" class=" btn btn-outline-secondary view-btn  " style="width: 97%;">
+              View all
+            </button>
           </div>
         </div>
-        <div class="col-md-11">
-          <div class="card bg-light">
-            <div class="card-body pad">
-              <div class="row">
-                <div class="col-11">
-                  <h5 class="card-title mb-0 t-15">Prototyping</h5>
-                  <p class="card-text mb-0 t-12"><small class="text-muted">Upcoming</small></p>
-                </div>
-                <div class="col-1">
-                  <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODALS -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add Project</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form class="needs-validation" novalidate>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="validationCustom01" class="form-label">Project Name</label>
+              <input type="text" class="form-control" id="validationCustom01" required>
+              <div class="invalid-feedback">
+                Enter a project name
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="validationCustom02" class="form-label">Date</label>
+              <input type="date" class="form-control" id="validationCustom02" required>
+              <div class="invalid-feedback">
+                Please select a date
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="validationCustom03" class="form-label">Start time</label>
+              <input type="time" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Please enter a start time
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="validationCustom04" class="form-label">Start time</label>
+              <input type="time" class="form-control" id="validationCustom04" required>
+              <div class="invalid-feedback">
+                Please enter a start time
               </div>
             </div>
           </div>
-        </div>
+          <div class="form-group modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Save changes</button>
+          </div>
+        </form>
       </div>
-      <div class="d-flex align-items-center">
-        <div class="col-md-1">
-          <div class="row">
-            <p class="text-center mb-0 date">16</p>
-            <p class="text-center mb-0 mon">May</p>
-          </div>
-        </div>
-        <div class="col-md-11">
-          <div class="card bg-light">
-            <div class="card-body pad">
-              <div class="row">
-                <div class="col-11">
-                  <h5 class="card-title mb-0 t-15">Collect References for new project</h5>
-                  <p class="card-text mb-0 t-12"><small class="text-muted">Upcoming</small></p>
-                </div>
-                <div class="col-1">
-                  <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Screenshots -->
-    <div class="col-md-4">
-      <div class="pb-4 container">
-        <h5 class="mt-3">Screenshots</h5>
-        <div class="grey-border  rowWrapper">
-          <img src="img/picture.png" class="img-rounded" alt="Cinque Terre">
-          <p class="col-md-8 mb-0">shot_1_attach_1.png</p>
-          <button type="button" class="btn col-md-2 w-100 btn-outline-secondary view-btn fw-bold"
-          style="font-size: x-small;">
-          View
-        </button>
-      </div>
-      <div class="grey-border rowWrapper">
-        <img src="img/picture.png" class="img-rounded" alt="Cinque Terre">
-        <p class="col-md-8 mb-0">shot_1_attach_3.png</p>
-        <button type="button" class="btn col-md-2 w-100 btn-outline-secondary view-btn fw-bold"
-        style="font-size: x-small;">
-        View
-      </button>
-    </div>
-    <div class="grey-border rowWrapper">
-      <img src="img/picture.png" class="img-rounded" alt="Cinque Terre">
-      <p class="col-md-8 mb-0">Screen_record_12.mov</p>
-      <button type="button" class="btn col-md-2 w-100 btn-outline-secondary view-btn fw-bold"
-      style="font-size: x-small;">
-      View
-    </button>
-  </div>
-  <button type="button" class=" btn btn-outline-secondary view-btn  " style="width: 97%;">
-    View all
-  </button>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<!-- MODALS -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Project</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <form class="needs-validation" novalidate>
-        <div class="modal-body">
-          <div class="form-group">
-            <label for="validationCustom01" class="form-label">Project Name</label>
-            <input type="text" class="form-control" id="validationCustom01" required>
-            <div class="invalid-feedback">
-              Enter a project name
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="validationCustom02" class="form-label">Date</label>
-            <input type="date" class="form-control" id="validationCustom02" required>
-            <div class="invalid-feedback">
-              Please select a date
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="validationCustom03" class="form-label">Start time</label>
-            <input type="time" class="form-control" id="validationCustom03" required>
-            <div class="invalid-feedback">
-              Please enter a start time
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="validationCustom04" class="form-label">Start time</label>
-            <input type="time" class="form-control" id="validationCustom04" required>
-            <div class="invalid-feedback">
-              Please enter a start time
-            </div>
-          </div>
-        </div>
-        <div class="form-group modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Save changes</button>
-        </div>
-      </form>
     </div>
   </div>
-</div>
 
-<!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js"
-integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
 
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-crossorigin="anonymous"></script>
-
-<script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
-<script src="app.js"></script>
+  <script src="https://cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
