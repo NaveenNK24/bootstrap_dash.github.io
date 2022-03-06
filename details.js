@@ -1,42 +1,42 @@
 var projectObjects = [
-    {
-        id: 0,
-        name: 'Deadlift',
-        date: 'May 21 2020',
-        start_time: '01:10pm',
-        end_time: '07:40pm',
-        duartion: '6:30',
-        indicator:"danger"
-    },
-    {
-        id: 1,
-        name: 'Deadlift',
-        date: 'May 21 2020',
-        start_time: '01:10pm',
-        end_time: '07:40pm',
-        duartion: '6:30',
-        indicator:"primary"
+{
+    id: 0,
+    name: 'Deadlift',
+    date: 'May 21 2020',
+    start_time: '01:10pm',
+    end_time: '07:40pm',
+    duartion: '6:30',
+    indicator:"danger"
+},
+{
+    id: 1,
+    name: 'Deadlift',
+    date: 'May 21 2020',
+    start_time: '01:10pm',
+    end_time: '07:40pm',
+    duartion: '6:30',
+    indicator:"primary"
 
-    },
-    {
-        id: 2,
-        name: 'Deadlift',
-        date: 'May 21 2020',
-        start_time: '01:10pm',
-        end_time: '07:40pm',
-        duartion: '6:30',
-        indicator:"warning"
+},
+{
+    id: 2,
+    name: 'Deadlift',
+    date: 'May 21 2020',
+    start_time: '01:10pm',
+    end_time: '07:40pm',
+    duartion: '6:30',
+    indicator:"warning"
 
-    },
-    {
-        id: 3,
-        name: 'Deadlift',
-        date: 'May 21 2020',
-        start_time: '01:10pm',
-        end_time: '07:40pm',
-        duartion: '6:30',
-        indicator:"secondary"
-    }
+},
+{
+    id: 3,
+    name: 'Deadlift',
+    date: 'May 21 2020',
+    start_time: '01:10pm',
+    end_time: '07:40pm',
+    duartion: '6:30',
+    indicator:"secondary"
+}
 ];
 
 function Update() {
@@ -44,13 +44,13 @@ function Update() {
     let projectItems = ''
     for (project of projectObjects) {
         projectItems += `<tr>  
-                            <td> <span class="me-3 badge  number number-${project.indicator}" >
-                            ${project.id}</span>${project.name}  </td>
-                            <td> ${project.date} </td>
-                            <td> ${project.start_time} </td>
-                            <td> ${project.end_time} </td>
-                            <td> ${project.duartion} </td>
-                        </tr>`
+        <td> <span class="me-3 badge  number number-${project.indicator}" >
+        ${project.id}</span>${project.name}  </td>
+        <td> ${project.date} </td>
+        <td> ${project.start_time} </td>
+        <td> ${project.end_time} </td>
+        <td> ${project.duartion} </td>
+        </tr>`
     }
     projectList.innerHTML = projectItems
 };
@@ -80,22 +80,22 @@ function submitForm() {
         start_time === '' || start_time === null || start_time === undefined ||
         end_time === '' || end_time === null || end_time === undefined) {
         resetForm();
-        return
-    }
-    let idInc = projectObjects[projectObjects.length - 1].id;
-    projectObjects.push({
-        id: idInc + 1,
-        name: name1,
-        date: date,
-        start_time: start_time,
-        end_time: end_time,
-        duartion: '6:30'
+    return
+}
+let idInc = projectObjects[projectObjects.length - 1].id;
+projectObjects.push({
+    id: idInc + 1,
+    name: name1,
+    date: date,
+    start_time: start_time,
+    end_time: end_time,
+    duartion: '6:30'
 
-    });
+});
 
-    console.log(projectObjects);
-    Update();
-    resetForm();
+console.log(projectObjects);
+Update();
+resetForm();
 }
 
 function resetForm() {
