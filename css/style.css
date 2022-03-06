@@ -280,7 +280,7 @@ body #Dashboard, body #actions {
 }
 
 #msbo{
-  margin: 0px 184px;
+  margin: 41px 184px;
   position: fixed;
   transition: 0.8s linear;
   top: 20px;
