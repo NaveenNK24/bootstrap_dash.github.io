@@ -40,7 +40,12 @@
   margin-bottom: 30px;
   overflow: hidden;
 }
-
+.navbar{
+  display: grid !important;
+  justify-content: space-evenly;
+  grid-gap: 1em;
+  grid-template-rows: .1fr 19fr 1fr;
+}
 .navbar.navbar-default{
   height: 100%;
   align-content: space-between;
@@ -188,24 +193,30 @@ body {
   font-size: 12px;
   margin-top: -7px;
 }
-
+.gridViewPort{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  align-items: center;
+  grid-gap: 1em;
+}
 .grey-border{
   border-bottom: 1px solid #cfc6c6;
 }
 
 .grey-border-right{
   border-right: 1px solid #cfc6c6;
+  padding: 2em;
 }
-
+.d-grid-2-side{
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  grid-gap: 1em;
+}
 .py7{
   padding: 0.7rem 0;
 }
 
-#msbo{
-  margin: -41px 184px;
-  position: absolute;
-  transition: 0.8s linear;
-}
+
 
 tr{
   border-bottom: hidden;
@@ -252,6 +263,7 @@ body .msb {
   animation-name: slideout;
 }
 
+
 div#msb::-webkit-scrollbar {
   width: 0px;
 }
@@ -267,15 +279,28 @@ body #Dashboard, body #actions {
   animation-name: slideout1;
 }
 
-body.msb-x .msbo a {
-  transform: rotate(180deg);
-  margin: -41px -10px !important;
+#msbo{
+  margin: 0px 184px;
+  position: fixed;
+  transition: 0.8s linear;
+  top: 20px;
 }
+
+body.msb-x .msbo a{
+  /*transform: rotate(180deg);*/
+  margin-left:-10px !important;
+  /*top: 0px;*/
+}
+body.msb-x .msbo a i{
+  transform: rotate(180deg);
+}
+
 body .msbo a .side-pane-icon{
   color: #ecbf41;
   background-color: white;
   border-radius: 31px;
 }
+
 @keyframes slidein {
   from {
     margin-left: 0px;
@@ -321,6 +346,25 @@ body .msbo a .side-pane-icon{
   .btn {
     font-size: small;
   }
+}
+@media only screen and (max-width: 1180px) {
+  .gridViewPort{
+   grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)) !important;
+ }
+  body .grey-border, body .grey-border-right{
+    border: none;
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  body:not([class*="msb-x"]) #actions,body:not([class*="msb-x"]) #Dashboard{
+   display: none !important;
+   color: black;
+ }
+ body:not([class*="msb-x"]) .msb {
+  box-shadow: 146px 17px 49px 12px #64646459;
+}
 }
 
 .fa-1_5x{
