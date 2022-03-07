@@ -346,6 +346,12 @@ body .msbo a .side-pane-icon{
   .btn {
     font-size: small;
   }
+  .padL{
+    padding-left: 1em;
+  }
+  #msbo{
+    margin: 23px 184px;
+  }
 }
 @media only screen and (max-width: 1180px) {
   .gridViewPort{
