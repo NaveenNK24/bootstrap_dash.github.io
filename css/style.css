@@ -230,7 +230,7 @@ tr{
   border-radius: 5px;
   font-size: medium;
   font-weight: 500;
-  min-width: 20%;
+  min-width: 2em;
 }
 .project-list .number.number-secondary {
   background:  rgba(var(--bs-secondary-rgb),0.2)!important;
@@ -281,7 +281,7 @@ body #Dashboard, body #actions {
 
 #msbo{
   margin: 41px 184px;
-  position: fixed;
+  position: absolute;
   transition: 0.8s linear;
   top: 20px;
 }
