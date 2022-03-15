@@ -1,82 +1,11 @@
-.msb {
-  width: 200px;
-  background-color: #382f9c !important;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: auto;
-  min-height: 100%;
-  overflow-y: auto;
-  white-space: nowrap;
-  height: 100%;
-  border-right: 1px solid #ddd;
-}
-
-.msb .navbar {
-  border: none;
-  margin-left: 0;
-  background-color: inherit;
-}
-.msb .navbar-header {
-  width: 100%;
-  border-bottom: 1px solid #e7e7e7;
-  margin-bottom: 20px;
-  background: #fff;
-}
-
-.msb .navbar-nav li {
-  display: block;
-  width: 100%;
-}
-.msb .navbar-nav li a {
-  padding: 15px;
-  color: white;
-  text-decoration: none;
-}
-
-.msb .nb {
-  padding-top: 5px;
-  padding-left: 10px;
-  margin-bottom: 30px;
-  overflow: hidden;
-}
-.navbar{
-  display: grid !important;
-  justify-content: space-evenly;
-  grid-gap: 1em;
-  grid-template-rows: .1fr 19fr 1fr;
-}
-.navbar.navbar-default{
-  height: 100%;
-  align-content: space-between;
-}
-.navbar-logo{
-  margin: 10px 20px;
-  /* margin-bottom: 40px; */
-}
-
-.msb li {
-  margin: .25em;
-  display: block;
-  position: relative;
-}
-
-.side-menu-container ul hr.sidebar-sep{
-  width: 14%;
-  margin: 14px;
-  border: 1.4px solid #ffffff8a;
-  border-radius: 25px;
-
-}
 #Dashboard {
-  margin-left: 200px;
+  margin-left: 15em;
   position: relative;
   min-height: 100%;
-  /*content view*/
 }
 
 #actions {
-  margin-left: 200px;
+  margin-left: 15em;
 }
 
 body {
@@ -112,24 +41,26 @@ body {
   color: rgb(143 141 141);
 }
 
-.incre {
+/* .incre {
+  width: 4em;
   background-color: rgb(62 185 111 / 86%);
   border-radius: 3px;
   display: flex;
   justify-content: center;
   align-items: baseline;
-}
-
+} */
+/* 
 .decre {
+  width: 4em;
   background-color: rgb(220 53 69 / 35%);
   border-radius: 3px;
   display: flex;
   justify-content: center;
   align-items: baseline;
-}
+} */
 
 .icon-style {
-  margin-right: 6px;
+  /* margin-right: 6px; */
   font-size: 10px;
 }
 
@@ -138,18 +69,22 @@ body {
   font-weight: 400;
 }
 
-.time-sheet-btn, .add-btn, .view-btn {
+.time-sheet-btn,
+.add-btn,
+.view-btn {
   color: #382f9c;
   background: #e0defb;
   border: none;
   text-transform: uppercase;
   font-weight: 500;
-  padding: 7px 14px;
+  /* padding: 7px 14px; */
 }
 
-.time-sheet-btn:hover, .add-btn:hover, .view-btn:hover {
+.time-sheet-btn:hover,
+.add-btn:hover,
+.view-btn:hover {
   color: #e0defb;
-  background:  #382f9c;
+  background: #382f9c;
 }
 
 .play-btn {
@@ -161,7 +96,7 @@ body {
   padding: 7px 14px;
 }
 .play-btn:hover {
-  color:  #382f9c;
+  color: #382f9c;
   background: #e0defb;
 }
 
@@ -169,7 +104,7 @@ body {
   padding: 10px 12px;
 }
 
-.shad{
+.shad {
   box-shadow: rgb(149 157 165 / 13%) 0px 10px 13px;
 }
 .t-15 {
@@ -180,51 +115,46 @@ body {
   font-size: 12px;
 }
 
-.date{
+.date {
   font-weight: 600;
   font-size: 22px;
 }
 
-.purp{
-  color: #382F9C;
+.purp {
+  color: #382f9c;
 }
 
-.mon{
+.mon {
   font-size: 12px;
   margin-top: -7px;
 }
-.gridViewPort{
+/* .gridViewPort{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   align-items: center;
   grid-gap: 1em;
-}
-.grey-border{
+} */
+.grey-border {
   border-bottom: 1px solid #cfc6c6;
 }
 
-.grey-border-right{
+.grey-border-right {
   border-right: 1px solid #cfc6c6;
   padding: 2em;
 }
-.d-grid-2-side{
+/* .d-grid-2-side{
   display: grid;
-  grid-template-columns: 0.5fr 2fr;
+  grid-template-columns: 0.2fr 2fr;
   grid-gap: 1em;
-}
-.py7{
-  padding: 0.7rem 0;
-}
+} */
 
-
-
-tr{
+tr {
   border-bottom: hidden;
 }
 
 .project-list .number {
   background: rgba(226, 10, 10, 0.17);
-  color: rgb(226, 10, 10) ;
+  color: rgb(226, 10, 10);
   padding: 9px;
   /* margin: 7px; */
   border-radius: 5px;
@@ -233,87 +163,95 @@ tr{
   min-width: 2em;
 }
 .project-list .number.number-secondary {
-  background:  rgba(var(--bs-secondary-rgb),0.2)!important;
-  color:  rgba(var(--bs-secondary-rgb))!important;
+  background: rgba(var(--bs-secondary-rgb), 0.2) !important;
+  color: rgba(var(--bs-secondary-rgb)) !important;
 }
 .project-list .number.number-primary {
-  background:  rgba(var(--bs-primary-rgb),0.2)!important;
-  color:  rgba(var(--bs-primary-rgb))!important;
+  background: rgba(var(--bs-primary-rgb), 0.2) !important;
+  color: rgba(var(--bs-primary-rgb)) !important;
 }
 .project-list .number.number-info {
-  background:  rgba(var(--bs-info-rgb),0.2)!important;
-  color:  rgba(var(--bs-info-rgb))!important;
+  background: rgba(var(--bs-info-rgb), 0.2) !important;
+  color: rgba(var(--bs-info-rgb)) !important;
 }
 .project-list .number.number-primary {
-  background:  rgba(var(--bs-primary-rgb),0.2)!important;
-  color:  rgba(var(--bs-primary-rgb))!important;
+  background: rgba(var(--bs-primary-rgb), 0.2) !important;
+  color: rgba(var(--bs-primary-rgb)) !important;
 }
-.project-list td{
+.project-list td {
   vertical-align: middle;
 }
 body.msb-x .msb {
-  margin-left: -200px;
-  animation-duration: 1s;
-  animation-name: slidein;
+  margin-left: -15em;
+  /* animation-duration: 1s;
+  animation-name: slidein; */
+  transition: 0.4s linear;
 }
 
 body .msb {
   margin-left: 0px;
-  animation-duration: 1s;
-  animation-name: slideout;
+  /* animation-duration: 1s;
+  animation-name: slideout; */
+  transition: 0.4s linear;
 }
-
 
 div#msb::-webkit-scrollbar {
   width: 0px;
 }
-body.msb-x #Dashboard, body.msb-x #actions {
+body.msb-x #Dashboard,
+body.msb-x #actions {
   margin-left: 0px;
-  animation-duration: 1s;
-  animation-name: slidein1;
+  /* animation-duration: 1s;
+  animation-name: slidein1; */
+  transition: 0.4s linear;
 }
 
-body #Dashboard, body #actions {
-  margin-left: 200px;
-  animation-duration: 1s;
-  animation-name: slideout1;
+body #Dashboard,
+body #actions {
+  margin-left: 15em;
+  /* animation-duration: 1s;
+  animation-name: slideout1; */
+  transition: 0.4s linear;
 }
 
-#msbo{
-  margin: 41px 184px;
+.msbo {
+  margin-left: 13.5em;
+  margin-top: 3em;
   position: absolute;
-  transition: 0.8s linear;
-  top: 20px;
+  transition: 0.4s linear;
 }
 
-body.msb-x .msbo a{
-  /*transform: rotate(180deg);*/
-  margin-left:-10px !important;
-  /*top: 0px;*/
+.offcanvas {
+  transition: 0.4s linear;
 }
-body.msb-x .msbo a i{
+
+body.msb-x .msbo {
+  margin-left: -1.5em !important;
+  margin-top: 3.5 em;
+}
+body.msb-x .msbo i {
   transform: rotate(180deg);
 }
 
-body .msbo a .side-pane-icon{
+body .msbo .side-pane-icon {
   color: #ecbf41;
   background-color: white;
   border-radius: 31px;
 }
-
+/* 
 @keyframes slidein {
   from {
     margin-left: 0px;
   }
 
   to {
-    margin-left: -200px;
+    margin-left: -15em;
   }
 }
 
 @keyframes slideout {
   from {
-    margin-left: -200px;
+    margin-left: -15em;
   }
 
   to {
@@ -323,7 +261,7 @@ body .msbo a .side-pane-icon{
 
 @keyframes slidein1 {
   from {
-    margin-left: 200px;
+    margin-left: 15em;
   }
 
   to {
@@ -337,11 +275,11 @@ body .msbo a .side-pane-icon{
   }
 
   to {
-    margin-left: 200px;
+    margin-left: 15em;
   }
-}
+} */
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   body,
   .btn {
     font-size: small;
@@ -352,8 +290,8 @@ body .msbo a .side-pane-icon{
   #msbo{
     margin: 23px 184px;
   }
-}
-@media only screen and (max-width: 1180px) {
+} */
+/* @media only screen and (max-width: 1180px) {
   .gridViewPort{
    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)) !important;
  }
@@ -361,34 +299,35 @@ body .msbo a .side-pane-icon{
     border: none;
     padding: 0px;
   }
-}
+} */
 
 @media only screen and (max-width: 990px) {
-  body:not([class*="msb-x"]) #actions,body:not([class*="msb-x"]) #Dashboard{
-   display: none !important;
-   color: black;
- }
- body:not([class*="msb-x"]) .msb {
-  box-shadow: 146px 17px 49px 12px #64646459;
-}
+  body:not([class*="msb-x"]) #actions,
+  body:not([class*="msb-x"]) #Dashboard {
+    display: none !important;
+    color: black;
+  }
+  body:not([class*="msb-x"]) .msb {
+    box-shadow: 146px 17px 49px 12px #64646459;
+  }
 }
 
-.fa-1_5x{
+/* .fa-1_5x{
   font-size: 1.5em;
   width: 15%
 }
 i.fa-white{
   color: white;
-}
-.side-menu-container.h-100{
+} */
+.side-menu-container.h-100 {
   height: 80% !important;
 }
 
-div.rowWrapper{
+/* div.rowWrapper{
   display: grid;
   grid-template-columns: 0.3fr minmax(136px, 280px) 1fr;
   grid-row-gap: 2em ;
   grid-column-gap: 2em ;
   margin-bottom: 1em;
   padding: 0.5em;
-}
+} */
